@@ -1,0 +1,9 @@
+.box{
+    position:fixed;
+
+    width: 100px;
+    height: 100px;
+    left: 0 px;
+    top: 0 px;
+
+}
