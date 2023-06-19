@@ -1,0 +1,6 @@
+li:nth-child(2){
+    background-color: rgb(255,0,0);
+}
+li:last-child{
+    background-color: rgb(255,0,0);
+}
