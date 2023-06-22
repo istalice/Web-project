@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交换变量的值</title>
+</head>
+<body>
+<script>
+  // 为后面的冒泡排序做准备
+
+  let num1 = 10
+  let num2 = 20
+  let temp
+  //核心思路：使用一个临时变量 用来做中间存储
+  //num1 = num2 是错误的 先让num1房间（盒子）空出来，才能让num2 进去
+
+  temp = num1
+  num1 =  num2
+  num2 = temp
+  document.write(num1,num2)
+  console.log(num1,num2)
+</script>
+</body>
+</html>
