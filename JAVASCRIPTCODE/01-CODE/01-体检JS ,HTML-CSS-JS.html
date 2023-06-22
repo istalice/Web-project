@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>体验JS </title>
+  <style>
+    .pink{
+      background-color: pink;
+    }
+  </style>
+
+</head>
+<body>
+<button class="pink" value="按钮">按钮</button>
+<button value="按钮">按钮</button>
+<button value="按钮">按钮</button>
+<button value="按钮">按钮</button>
+<script>
+  let but = document.querySelectorAll('button')
+  for(let i = 0 ; i < but.length; i++){
+    but[i].addEventListener('click',function (){
+      document.querySelector('.pink').className=''
+      this.className='pink'
+            }
+    )
+  }
+</script>
+</body>
+</html>
