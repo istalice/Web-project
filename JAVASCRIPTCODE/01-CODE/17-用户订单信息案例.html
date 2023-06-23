@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >用户订单信息案例</title>
+  <style type="text/css">
+    h1{
+      text-align: center;
+    }
+   /* table th td  会多出一个边框 需要合并边框  */
+    table{
+      border-collapse: collapse;
+      height: 80px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    th{
+      padding: 5px 30px;
+    }
+    table,th,td{
+      border: 1px solid black;
+    }
+  </style>
+
+</head>
+<body>
+<div>
+  <h1 > 订单付款确认页面</h1>
+
+  
+</div>
+<script>
+  //用户输入
+  let price = parseFloat(prompt('请输入商品价格：'))
+  let count = Number(prompt('请输入商品数量：'))
+  let address = prompt('请输入收货地址')
+  //计算总价
+  let total = price * count
+  //页面打印 利用模板字符串 让页面活起来
+  document.write(`
+      <table>
+         <tr>
+           <th>商品名称</th>
+           <th>商品价格</th>
+           <th>商品数量</th>
+           <th>总价</th>
+           <th>收获地址</th>
+
+         </tr>
+          <tr>
+            <td>小米手机青春PLUS</td>
+            <td>${price}元</td>
+            <td>${count}</td>
+            <td>${total}元</td>
+            <td>${address}</td>
+          </tr>
+       </table>
+  `)
+</script>
+
+</body>
+</html>

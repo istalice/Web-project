@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数字补0案例</title>
+</head>
+<body>
+<script>
+    // 用户输入
+    let num = +prompt('请输入一个数')
+    // 判断 三元 不用if
+  //  num < 10 ? alert('0'+`${num }`) : alert(`${num }`) 这个也可以
+   num = num < 10 ? '0'+num : num
+    alert(num)
+</script>
+</body>
+</html>
