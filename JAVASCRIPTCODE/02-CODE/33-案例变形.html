@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例变形</title>
+</head>
+<body>
+<script>
+  while (true){
+      let op = prompt(`
+      1. 输入 + - * /计算两个数字的结果
+      2.如果输入q则是退出
+      `)
+      // q 就直接退出 就可以写了
+      if (op === 'q'){
+          break
+      }
+      // 第二框 怎么连接呢？
+      let num1 = +prompt('请您输入第一个数字：')
+      let num2 = +prompt('请您输入第二个数字：')
+      if (op === '+'){
+         alert(`两数相加的结果是${ num1+ num2}`)
+      }else  if(op === '-'){
+          alert(`两数相减的结果是${ num1 - num2}`)
+      }else if (op === '*'){
+          alert(`两数相乘的结果是${ num1 + num2}`)
+      }else if(op === '/'){
+          alert(`两数相除的结果是${ num1 / num2}`)
+      }
+    
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单计算器</title>
+</head>
+<body>
+<script>
+  //输入
+  let num1 = +prompt('请您输入第一个数：')
+  let num2 = +prompt('请您输入第二个数：')
+  let sp = prompt('请您输入 + — * / 其中一个：')
+  //运算符错了
+  switch (sp){
+    case '+':
+      alert(`您选择的是加法，结果是：${num1+num2}`)
+          break
+    case '-':
+      alert(`您选择的是减法法，结果是：${num1-num2}`)
+      break
+    case '*':
+      alert(`您选择的是乘法，结果是：${num1*num2}`)
+      break
+    case '/':
+      alert(`您选择的是除法，结果是：${num1/num2}`)
+      break
+    //条件让输入 + - * / default 的条件可以不写
+    // default:
+    //   alert('没有符合的体条件')
+
+  }
+</script>
+
+</body>
+</html>
