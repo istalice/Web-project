@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组筛选</title>
+</head>
+<body>
+<script>
+  let arr =[2,0,6,77,0,52,0,25,7]
+  //  声明新的空的数组
+  let newArr =[]
+  //大于或者等于10 放到数组里面
+  for (let i = 0 ; i < arr.length;i++){
+    if(arr[i] >= 10){
+      //怎么形成新数组 满足条件 追加给新的数组
+      //新数组写在前面
+      newArr.push(arr[i])
+    }
+  }
+  console.log(newArr)
+</script>
+</body>
+</html>

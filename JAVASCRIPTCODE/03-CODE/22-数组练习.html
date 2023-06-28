@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组练习</title>
+</head>
+<body>
+<script>
+  // 声明一个空数组
+  let arr = []
+  let ageArr = []
+
+  //五个用户 输入 用for 更优雅
+  for (let i =1; i <= 5; i++){
+    //把数据放到数组中 push
+    arr.push(prompt(`第${i}位用户年龄为:`))
+  }
+  document.write(arr)
+  // 需要遍历数组 才能知道小于18的
+  for (let i =0;i < arr.length; i++){
+      if (arr[i] <= 18 ){
+          ageArr.push(arr[i])
+      }
+  }
+  document.write(`未成年人的年龄是：${ageArr}`)
+// 打印所有人的总和
+  let sum = 0
+  for (let i =0; i <arr.length; i++){
+     // sum += arr[i]
+      sum = sum +arr[i]
+
+  }
+  document.write(`所有人年龄总和是：${sum}`)
+  //平均年龄
+  let avgAge = sum / arr.length
+  document.write(`平均年龄是：${avgAge}`)
+// 求最大值
+  let max = arr[0] //数组 存不在数子里
+  for (let i =0; i <arr.length; i++){
+
+      // max <arr[i] ? arr[i] : max
+      if (max < arr[i]){
+          max = arr[i]
+
+      }
+
+  }
+  document.write(`最大值是${max}`)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组平均年龄</title>
+</head>
+<body>
+<script>
+  let arr = [15,19,21,33,18,24]
+  let sum = arr[0]
+  let aveAge = 0
+  for (let i =1;i <arr.length;i++){
+    sum += arr[i]
+    aveAge = sum / arr.length
+  }
+  document.write(aveAge)
+
+</script>
+</body>
+</html>
