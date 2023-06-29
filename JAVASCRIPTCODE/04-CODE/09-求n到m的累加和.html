@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>求n到m 的累加和</title>
+</head>
+<body>
+ <script>
+   function getSum(start = 0 ,end = 0 ) {
+     let sum = 0
+    for(let i = start; i <= end; i++){
+         sum += i
+      }
+    alert(`从${start}到${end}累加的结果是：${sum}`)
+   }
+   getSum(+prompt('请输入第一个数：'),+prompt('请输入第二个数：')) //实参可以变量
+ </script>
+
+
+</body>
+</html>
