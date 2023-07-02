@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象练习</title>
+</head>
+<body>
+<script>
+  let goods ={
+    'goods-name' : '小米小米10青春版',
+    num : '100012816024',
+    weight : '0.55kg',
+    address: '中国大陆'
+  }
+  //console.log(goods)
+  //使用属性 查 对象名 . 属性名
+  console.log(goods.address)
+  console.log(goods.num)
+  console.log(goods.weight)
+
+// 改
+  goods.weight = '0.45kg'
+//增
+  goods.money = '12780'
+//删
+  delete goods.num
+  goods.name = '小米10 PLUS'
+  goods.color = 'pink'
+  //依次打印
+  console.log(goods.num)
+  console.log(goods.name)
+  console.log(goods.weight)
+  console.log(goods.color)
+  console.log(goods.address)
+//查的另一种反式 对象名['属性名']
+  console.log(obj['goods-name'])
+  //查总结:
+  //1 对象名. 属性名 goods.age
+  console.log(goods.num)
+  //2 对象名[ '属性名'] goods['age']
+  console.log(goods['num'])
+
+</script>
+
+</body>
+</html>

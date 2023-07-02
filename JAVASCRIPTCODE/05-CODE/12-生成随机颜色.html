@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机生成颜色</title>
+  <style>
+    div{
+      width: 300px;
+      height: 300px;
+    }
+
+  </style>
+</head>
+<body>
+<script>
+  function getRandColor(flag = true){
+    //3.如果是true 则返回#ffffff
+    if(flag ){
+      let str = '#'
+      let arr = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f']
+//利用for 循环随机抽6次
+      for(let i =1; i < 6;i++){
+        //每次要随机从数组里面抽取一个
+        // random 是数组的索引号 是随机的
+        let  random = Math.floor(Math.random() * arr.length)
+         str = str + arr[random]
+      }
+      return  str
+    }
+    //4.否则是false 则返回rgb（255，255，255）
+    else {
+      let r = Math.floor(Math.random()* 256)
+      let g = Math.floor(Math.random()* 256)
+      let b = Math.floor(Math.random()* 256)
+      return `rgb(${r},${g},${b})`
+
+    }
+
+  }
+  //2.调用函数（getRandomColor(布尔值)）
+  console.log(getRandColor(false))
+  console.log(getRandColor(true))
+  console.log(getRandColor())
+  const div = document.querySelector('div')
+  div.style.backgroundColor = getRandColor()
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字大小限定次数</title>
+</head>
+<body>
+<script>
+  function getRandom(N,M){
+   return  Math.floor(Math.random()*(M-N +1))+N
+  }
+  let random = getRandom(1,10)
+// 2。设定三次，三次没猜到就直接退出
+  let flag = true //开关变量
+  for(let i = 1; i <= 3; i++){
+    let num = +prompt('请输入1到10中的一个数字：')
+    if(num > random){
+      alert('猜大了，继续猜')
+    }else if(num < random){
+      alert('猜小了，继续猜')
+    }else {
+      flag= false
+      alert('猜对了')
+      break
+      }
+    }
+  if (flag){
+    alert('次数已经用完')
+
+
+  }
+
+
+</script>
+
+</body>
+</html>

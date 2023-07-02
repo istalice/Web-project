@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数</title>
+</head>
+<body>
+<script>
+    // //左闭右开 能取到0 但是取不到1 中间的一个随机小数
+    // console.log(Math.random())
+    // // 0-10 之间的整数
+    // console.log(Math.random()*11)
+    // let arr =['red','green','blue']
+    // let random = Math.floor(Math.random()*arr.length)
+    // console.log(random)
+    // console.log(arr[random])
+function  getRandom(N,M){
+    return Math.floor(Math.random() * (M -N +1))+N
+}
+
+    console.log(getRandom(4,8))
+
+</script>
+
+</body>
+</html>
